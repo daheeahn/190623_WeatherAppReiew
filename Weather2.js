@@ -50,7 +50,24 @@ const weatherCases = {
 }
 
 function Weather({ city, weatherName, temp }) {
-//   render() {
+
+    // weatherName에 아직 등록하지 않은 이름이 들어오면 -> redux 개념 필요?
+    // var i = 0;
+    // while (i < weatherCases.length) {
+    //     if (weatherName === weatherCases[i].weatherName) {
+    //         break;
+    //     }
+    //     i = i + 1;
+    // }
+
+    // if (i === weatherCases.length) {
+    //     return (
+    //         <View>
+    //             <Error weatherName={weatherName} />
+    //         </View>
+    //     );
+    // }
+
     return (
       <LinearGradient 
         style={styles.container}
